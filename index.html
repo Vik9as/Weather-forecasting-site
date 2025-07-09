@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather forcasting</title>
+
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=search" />
+</head>
+<body>
+   
+    <main class="main-container">
+
+        <header class="input-container"> 
+            <input  placeholder="Search-city" class="city-input">
+            <button class="search-btn">
+                <span class="material-symbols-outlined">
+                search
+                </span>
+            </button>
+
+        </header>
+
+         <section class="weather-info" style="display: none;">
+            <div class="loaction-data-container">
+                 <div class="location"> 
+                     <i class="fa-solid fa-location-dot"></i>
+                     <h4 class="country-txt">Gorakhpur</h4>
+
+                 </div>
+                 <h5 class="current-data-txt regular-txt">Wed, 07 Aug</h5>
+            </div>
+
+            <div class="weather-summary-container">
+                <img src="assets/weather/clouds.svg" alt="" class="weather-summary-img">
+                 
+                <div class="weather-summary-info">
+                     <h1 class="temp-txt">29 °C</h1>
+                      <h3 class="condition-txt regular-txt">clouds</h3>
+                </div>
+            </div>
+            <div class="weather-conditions-container">
+                   <div class="condition-item">
+                        <i class="fa-solid fa-droplet"></i>
+                           <div class="conditions-info">
+                            <h5 class="regular-txt">Humidity</h5>
+                        
+                            <h5 class="humidity-value-txt">55%</h5>
+                            </div>
+                   </div>
+            
+                   <div class="condition-item">
+                           <i class="fa-solid fa-wind"></i>
+                         <div class="conditions-info">
+                            <h5 class="regular-txt">wind speed</h5>
+                         
+                            <h5 class="wind-value-txt">2M/s</h5>
+                         </div> 
+                   </div> 
+            </div>
+
+
+            <div class="forecast-item-container">
+                        <div class="forecast-item">
+                            <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                            <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                            <h5 class="forecast-item-temp">29 °C</h5>
+                        </div>
+                        <div class="forecast-item">
+                            <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                            <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                            <h5 class="forecast-item-temp">29 °C</h5>
+                        </div>
+                        <div class="forecast-item">
+                            <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                            <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                            <h5 class="forecast-item-temp">29 °C</h5>
+                        </div>
+                        <div class="forecast-item">
+                            <h5 class="forecast-item-date regular-txt">05 Aug</h5>
+                            <img src="assets/weather/thunderstorm.svg" alt="" class="forecast-item-img">
+                            <h5 class="forecast-item-temp">29 °C</h5>
+                        </div>
+            </div>
+            
+
+
+         </section>
+
+
+
+        <!-- let's create a section for the search city weather message display -->
+        
+         <section class="search-city section-message">
+            <img src="assets/message/search-city.png" alt="" >
+           <div>
+            <h1>Search City</h1>
+            <h4 class="regular-txt">Find Out the weather conditions of the city</h4>
+           </div>
+
+         </section>
+
+
+         <section class="not-found section-message" style="display: none;">
+            <img src="assets/message/not-found.png" alt="" >
+           <div>
+            <h1>Search City</h1>
+            <h4 class="regular-txt">Find Out the weather conditions of the city</h4>
+           </div>
+
+         </section>
+
+         
+
+
+
+    </main>
+       
+  <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/f74614558d.js" crossorigin="anonymous"></script>
+</body>
+</html>
